@@ -34,10 +34,26 @@ async function submitOrder() {
     note: document.getElementById("note").value
   };
 
-  await fetch(SCRIPT_URL, {
+  try {
+  const response = await fetch(SCRIPT_URL, {
     method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
     body: JSON.stringify(data)
   });
+
+  if (!response.ok) {
+    throw new Error("Server Error");
+  }
+
+  alert("✅ Order Placed Successfully!");
+  window.location.href = "success.html";
+
+} catch (error) {
+  alert("❌ Order Failed: " + error.message);
+  console.log(error);
+  }
 
   alert("✅ Order Placed Successfully!");
       }
