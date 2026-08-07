@@ -21,3 +21,23 @@ function orderNow(product, color, price) {
 
     window.location.href = "order.html";
 }
+async function submitOrder() {
+  const data = {
+    name: document.getElementById("name").value,
+    phone: document.getElementById("phone").value,
+    address: document.getElementById("address").value,
+    area: document.getElementById("area").value,
+    product: localStorage.getItem("product"),
+    color: localStorage.getItem("color"),
+    quantity: document.getElementById("quantity").value,
+    price: localStorage.getItem("price"),
+    note: document.getElementById("note").value
+  };
+
+  await fetch(SCRIPT_URL, {
+    method: "POST",
+    body: JSON.stringify(data)
+  });
+
+  alert("✅ Order Placed Successfully!");
+      }
