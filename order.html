@@ -49,10 +49,29 @@
 <textarea placeholder="Additional Note (Optional)"></textarea>
 
 <button type="submit">Place Order</button>
+<h3>Order Summary</h3>
 
+<p><strong>Product:</strong> <span id="product"></span></p>
+
+<p><strong>Color:</strong> <span id="color"></span></p>
+
+<p><strong>Price:</strong> ৳<span id="price"></span></p>
+
+<p><strong>Delivery:</strong> ৳<span id="delivery">80</span></p>
+
+<h2>Total: ৳<span id="total"></span></h2>
 </form>
 
 </div>
+<script>
+const product = localStorage.getItem("product");
+const color = localStorage.getItem("color");
+const price = Number(localStorage.getItem("price"));
 
+document.getElementById("product").innerText = product;
+document.getElementById("color").innerText = color;
+document.getElementById("price").innerText = price;
+document.getElementById("total").innerText = price + 80;
+</script>
 </body>
 </html>
