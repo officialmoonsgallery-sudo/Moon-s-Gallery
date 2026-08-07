@@ -11,5 +11,12 @@ function buyNow(product,color,price){
     localStorage.setItem("color",color);
     localStorage.setItem("price",price);
 
-    window.location.href="checkout.html";
+    window.location.href="order.html";
       }
+function orderNow(product, color, price) {
+    localStorage.setItem("product", product);
+    localStorage.setItem("color", color);
+    localStorage.setItem("price", price);
+
+    window.location.href = "order.html";
+}
