@@ -22,6 +22,7 @@ function orderNow(product, color, price) {
     window.location.href = "order.html";
 }
 async function submitOrder() {
+alert("submitOrder started");    
   const data = {
     name: document.getElementById("name").value,
     phone: document.getElementById("phone").value,
