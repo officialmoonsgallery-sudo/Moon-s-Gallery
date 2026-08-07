@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moon's Gallery</title>
 
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#0f0f0f;
+color:white;
+}
+
+header{
+background:linear-gradient(90deg,#8e2de2,#4a00e0);
+padding:60px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:40px;
+margin:0;
+}
+
+header p{
+font-size:18px;
+opacity:.9;
+}
+
+section{
+padding:40px 20px;
+text-align:center;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.card{
+background:#1d1d1d;
+padding:20px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+background:#2d2d2d;
+}
+
+button{
+padding:12px 25px;
+background:#8e2de2;
+border:none;
+border-radius:30px;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+footer{
+background:#111;
+padding:20px;
+text-align:center;
+margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Moon's Gallery</h1>
+<p>Premium Digital Store • Fashion • Gifts • Handmade Crafts • Apps</p>
+<br>
+<button>Shop Now</button>
+</header>
+
+<section>
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🎁 Gifts</h3>
+<p>Premium gift collection.</p>
+</div>
+
+<div class="card">
+<h3>👕 Fashion</h3>
+<p>Stylish fashion products.</p>
+</div>
+
+<div class="card">
+<h3>🧶 Handmade</h3>
+<p>Beautiful handmade crafts.</p>
+</div>
+
+<div class="card">
+<h3>💻 Digital</h3>
+<p>Premium apps & digital services.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Moon's Gallery. All Rights Reserved.
+</footer>
+
+</body>
+  </html>
