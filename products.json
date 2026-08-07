@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Premium Three Piece",
+    "price": 750,
+    "colors": [
+      {
+        "name": "Black Floral",
+        "image": "black-floral.jpg"
+      },
+      {
+        "name": "Maroon",
+        "image": "maroon.jpg"
+      }
+    ]
+  }
+]
